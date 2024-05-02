@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-transform: capitalize;
+    text-transform: none;
     transition: all .2s linear;
     text-decoration: none;
 }
@@ -120,15 +120,18 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    text-transform: capitalize;
 }
 
 .header .navbar ul li{
     margin: 0 1.5rem;
+    text-transform: capitalize;
 }
 
 .header .navbar ul li a{
     font-size: 2rem;
     color: #fff;
+    text-transform: capitalize;
 }
 
 .header .navbar ul li a:hover{
@@ -148,9 +151,7 @@ body{
 }
 
 .home{
-    min-height: 100vh;
-    width: 100vw;
-    background-image: url(../images/img1.mp4);
+    /* background-image: url(../images/img1.mp4); */
     background-size: cover;
     display: flex;
     align-items: center;
@@ -161,10 +162,26 @@ body{
     position: relative;
     overflow: hidden !important;
 }
+.video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1; /* Ensure text is above the video */
+}
+
+.video-text h1,
+.video-text h2 {
+    color: #fff; /* Set text color */
+    font-size: 2rem; /* Adjust font size as needed */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
 
 .home h1{
     color: #fff;
-    font-size: 5.5rem;
+    font-size: 4.5rem;
 }
 
 .home h2{
