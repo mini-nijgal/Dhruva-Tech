@@ -72,8 +72,8 @@ body{
 
 .home{
     min-height: 70vh;
-    width: 100vw;
-    background-image: url(../images/img3.jpg);
+    width: 1000px;
+    background: url(../images/img3.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
